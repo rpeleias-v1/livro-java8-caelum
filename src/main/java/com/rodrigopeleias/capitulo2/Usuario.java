@@ -5,6 +5,9 @@ public class Usuario {
     private int pontos;
     private boolean moderador;
 
+    public Usuario() {
+    }
+
     public Usuario(String nome, int pontos) {
         this.nome = nome;
         this.pontos = pontos;
@@ -24,5 +27,10 @@ public class Usuario {
 
     public void tornaModerador() {
         this.moderador = true;
+    }
+
+    @Override
+    public String toString() {
+        return "Usuario " + nome;
     }
 }
